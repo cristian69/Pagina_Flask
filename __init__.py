@@ -1,11 +1,15 @@
-from flask import Flask 
+from flask import Flask,url_for
+from flask import render_template
 import servicios 
+
+
 app = Flask(__name__)
 
-@app.route('/')#efine todo su esqueleto de vistas
+
+@app.route('/')#define todo su esqueleto de vistas
 
 def holapython():
-	return 'servidor inicializando'
+	return render_template("pagina.html")
 
 @app.route('/php')
 
