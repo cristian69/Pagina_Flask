@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route('/')#define todo su esqueleto de vistas
 
 def holapython():
-	return render_template("pagina.html")
+	return render_template("hello.html")
 
 @app.route('/php')
 
@@ -32,4 +32,4 @@ def sitio(title):
 
 
 if __name__ == '__main__':
-	app.run(host='192.168.0.76',debug=True)
+	app.run(debug=True)
